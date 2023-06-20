@@ -7,6 +7,12 @@
     <title>Emmure</title>
     <link rel="shortcut icon" href="../images/logoE.png" type="image/x-icon" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;900&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/9a4ac5cbc0.js"
       crossorigin="anonymous"
@@ -16,7 +22,6 @@
   </head>
 
   <body id="body">
-    <!-- navbar -->
     <div id="nav">
       <nav>
         <ul>
@@ -28,44 +33,247 @@
       </nav>
     </div>
 
-    <div class="content">
-      <!-- Store-->
-      <div class="merch">
-        <img src="../images/merch/blackcamohoodie1.png" alt="" />
-        <img src="../images/merch/blackmetaltee.png" alt="" />
-        <img src="../images/merch/hindsightteef.png" alt="" />
-        <img src="../images/merch/hoodie2.png" alt="" />
-        <img src="../images/merch/LSGroup.png" alt="" />
-        <img src="../images/merch/seance.png" alt="" />
-        <img src="../images/merch/TieDyeGroup.png" alt="" />
-        <img src="../images/merch/Windgroup.png" alt="" />
-        <img src="../images/merch/witnesssufferingfb.png" alt="" />
+    <div class="container">
+      <div class="product-grid">
+        <div class="card">
+          <img
+            src="../images/merch/blackmetaltee.png"
+            alt="blackmetaltee"
+            class="card_img"
+          />
+          <div class="card_content">
+            <h2 class="card_title">Black Metal T-Shirt</h2>
+            <p class="card_price">$27.99</p>
+            <form action="#">
+              <label for="size">Choose a size:</label>
+              <select class="card_options" name="size" id="size">
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+              </select>
+              <br /><br />
+              <input type="submit" value="add to cart" />
+            </form>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="../images/merch/hindsightteef.png"
+            alt="hindsightteef"
+            class="card_img"
+          />
+          <div class="card_content">
+            <h2 class="card_title">Hindsight T-Shirt</h2>
+            <p class="card_price">$27.99</p>
+            <form action="#">
+              <label for="size">Choose a size:</label>
+              <select class="card_options" name="size" id="size">
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+              </select>
+              <br /><br />
+              <input type="submit" value="add to cart" />
+            </form>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="../images/merch/TieDyeGroup.png"
+            alt="TieDyeGroup"
+            class="card_img"
+          />
+          <div class="card_content">
+            <h2 class="card_title">Tie Dye T-Shirt</h2>
+            <p class="card_price">$27.99</p>
+            <form action="#">
+              <label for="size">Choose a size:</label>
+              <select class="card_options" name="size" id="size">
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+              </select>
+              <br /><br />
+              <input type="submit" value="add to cart" />
+            </form>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="../images/merch/LSGroup.png"
+            alt="LSGroup"
+            class="card_img"
+          />
+          <div class="card_content">
+            <h2 class="card_title">Bird Long Sleeve</h2>
+            <p class="card_price">$34.99</p>
+            <form action="#">
+              <label for="size">Choose a size:</label>
+              <select class="card_options" name="size" id="size">
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+              </select>
+              <br /><br />
+              <input type="submit" value="add to cart" />
+            </form>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="../images/merch/seance.png" alt="seance" class="card_img" />
+          <div class="card_content">
+            <h2 class="card_title">Seance Long Sleeve</h2>
+            <p class="card_price">$34.99</p>
+            <form action="#">
+              <label for="size">Choose a size:</label>
+              <select class="card_options" name="size" id="size">
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+              </select>
+              <br /><br />
+              <input type="submit" value="add to cart" />
+            </form>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="../images/merch/witnesssufferingfb.png"
+            alt="witnesssufferingfb"
+            class="card_img"
+          />
+          <div class="card_content">
+            <h2 class="card_title">Witness Long Sleeve</h2>
+            <p class="card_price">$34.99</p>
+            <form action="#">
+              <label for="size">Choose a size:</label>
+              <select class="card_options" name="size" id="size">
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+              </select>
+              <br /><br />
+              <input type="submit" value="add to cart" />
+            </form>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="../images/merch/blackcamohoodie1.png"
+            alt="blackcamohoodie1"
+            class="card_img"
+          />
+          <div class="card_content">
+            <h2 class="card_title">Camo Hoodie</h2>
+            <p class="card_price">$57.99</p>
+            <form action="#">
+              <label for="size">Choose a size:</label>
+              <select class="card_options" name="size" id="size">
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+              </select>
+              <br /><br />
+              <input type="submit" value="add to cart" />
+            </form>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="../images/merch/hoodie2.png"
+            alt="hoodie2"
+            class="card_img"
+          />
+          <div class="card_content">
+            <h2 class="card_title">Grey Hoodie</h2>
+            <p class="card_price">$57.99</p>
+            <form action="#">
+              <label for="size">Choose a size:</label>
+              <select class="card_options" name="size" id="size">
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+              </select>
+              <br /><br />
+              <input type="submit" value="add to cart" />
+            </form>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="../images/merch/Windgroup.png"
+            alt="Windgroup"
+            class="card_img"
+          />
+          <div class="card_content">
+            <h2 class="card_title">Black Windbreaker</h2>
+            <p class="card_price">$65.99</p>
+            <form action="#">
+              <label for="size">Choose a size:</label>
+              <select class="card_options" name="size" id="size">
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+              </select>
+              <br /><br />
+              <input type="submit" value="add to cart" />
+            </form>
+          </div>
+        </div>
       </div>
-      <!-- Footer-->
+    </div>
 
-      <div id="footer">
-        <!-- Logo-->
+    <!-- Footer-->
 
+    <section>
+      <div class="footer">
         <img src="../images/logoE.png" alt="Emmure" />
-
-        <br />
-        <!-- Social media-->
-
-        <a
-          href="https://open.spotify.com/artist/1C62FV9Cltn9L4c9jAwCyk"
+        <a href="https://open.spotify.com/artist/1C62FV9Cltn9L4c9jAwCyk"
           target="_blank"
           ><i class="fa-brands fa-spotify fa-5x"></i>
         </a>
-
-        <a
-          href="https://www.youtube.com/channel/UCgzr0lvIbjL1hlKsGtwfVDA"
+        <a href="https://www.youtube.com/channel/UCgzr0lvIbjL1hlKsGtwfVDA"
           target="_blank"
         >
           <i class="fa-brands fa-youtube fa-5x"></i>
         </a>
 
-        <a
-          href="https://music.apple.com/us/artist/emmure/215655584"
+        <a href="https://music.apple.com/us/artist/emmure/215655584"
           target="_blank"
         >
           <i class="fa-brands fa-apple fa-5x"></i>
@@ -75,8 +283,7 @@
           <i class="fa-brands fa-instagram fa-5x"></i>
         </a>
 
-        <a
-          href="https://twitter.com/EMMUREmusic?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+        <a href="https://twitter.com/EMMUREmusic?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
           target="_blank"
         >
           <i class="fa-brands fa-twitter fa-5x"></i>
@@ -85,6 +292,6 @@
           <i class="fa-brands fa-facebook fa-5x"></i>
         </a>
       </div>
-    </div>
+    </section>
   </body>
 </html>
