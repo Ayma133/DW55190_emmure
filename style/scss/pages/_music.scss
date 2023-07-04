@@ -1,0 +1,57 @@
+.box{
+    div{
+      color: white;
+      font-weight:  bolder;
+    }
+    a{
+      width: 100%;
+      color: white;
+      margin: auto;
+      padding: 14px 14px;
+      border: none;
+      border-radius: 4px;
+      text-decoration: none;
+    } 
+   a:hover {
+    color:#686767 !important;
+    background-color: #000;
+    }
+
+  }
+
+  .track-list {
+    display: grid;
+    align-content: center;
+    padding: 20px;
+  .track{
+
+    margin-top: 20px;
+    grid-gap: 10px;
+    .track-child{
+      justify-content: flex-start;
+    }
+    
+  }
+}
+
+.album-container {
+  --column-count: 1;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(var(--column-count), 1fr); 
+  padding: 20px;
+}
+
+
+@media (max-width: 1023px) {
+  .album-container {
+    --column-count: 1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .album-container {
+    --column-count: 2;
+  }
+}
+

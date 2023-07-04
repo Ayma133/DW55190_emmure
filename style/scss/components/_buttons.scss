@@ -1,0 +1,30 @@
+.btn 
+a{
+  width: 100%;
+  
+  color: white;
+  margin: auto;
+  padding: 14px 14px;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+} 
+a:hover {
+  
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: #424242;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    justify-self: end;
+    align-self: center;
+  }
+
+  .btn:hover{
+    background-color: #686767;
+
+  }
