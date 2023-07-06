@@ -16,6 +16,7 @@
       src="https://kit.fontawesome.com/9a4ac5cbc0.js"
       crossorigin="anonymous"
     ></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link rel="stylesheet" href="./style/css/style.css" />
   </head>
@@ -35,10 +36,16 @@
 
     <div id="body">
 
+      <div class= logo data-aos="fade-down" data-aos-anchor-placement="top-center"  data-aos-duration="3000">
+        <img src="./images/Emmure_Logo.png" alt="Emmure logo">
+
+      </div>
+
+
       <!-- THE HELL WE CREATE EUROPE/UK TOUR 2023 -->
       <div class="index">
       <div class="content">
-        <div >
+        <div>
           <img src="./images/tourPosterDesktop.jpg" alt="tour" />
           <p class="tourContent">THE HELL WE CREATE EUROPE/UK TOUR 2023</p>
           <div class="btn">
@@ -61,16 +68,29 @@
         </div>
       </div>
 
-      <!-- video -->
+      <!-- video 
       <div  class="content">
         <video loop autoplay src="./videos/thundermouth.mp4" type="video/mp4"></video>
         <p>Thundermouth - Official Video</p>
         <div class="btn">
-        <a href="https://www.youtube.com/watch?v=jgCkQI8Y_vI" target="_blank">
-          Watch Now
-        </a>
+          <a href="https://www.youtube.com/watch?v=jgCkQI8Y_vI" target="_blank">
+            Watch Now
+          </a>
+        </div>
+
       </div>
-    </div>
+      -->
+
+      <div  class="content">
+        <video loop autoplay src="./videos/thundermouth.mp4" type="video/mp4"></video>
+        <p>Thundermouth - Official Video</p>
+        <div class="btn">
+          <a href="https://www.youtube.com/watch?v=jgCkQI8Y_vI" target="_blank">
+            Watch Now
+          </a>
+        </div>
+
+      </div>
   </div>
 </div>
 
@@ -119,6 +139,9 @@
 
       </div>
       </section>
-    
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init()
+      </script>
   </body>
 </html>

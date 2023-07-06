@@ -133,12 +133,25 @@ img {
   margin: auto;
 }
 
-.content .tour {
+.content {
   margin: auto;
 }
+.content p,
 .content h1,
 .content li {
   color: #fcf2f2;
+  font-weight: 800;
+  font-size: x-large;
+  text-align: center;
+}
+
+.logo img {
+  margin: auto;
+  padding: 50px;
+}
+
+.btn {
+  margin: auto;
 }
 
 .product-grid {
@@ -179,8 +192,19 @@ img {
   margin: auto;
 }
 .container .product-grid .card {
+  display: flex;
+  flex-direction: column;
   aspect-ratio: 1/1.5;
   background-color: #000;
+  /*a {
+    width: 100%;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+  }*/
 }
 .container .product-grid .card .card_img {
   width: 100%;
@@ -234,15 +258,6 @@ img {
 }
 .container .product-grid .card input[type=submit]:hover {
   background-color: #686767;
-}
-.container .product-grid .card a {
-  width: 100%;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  text-decoration: none;
 }
 
 .box {
@@ -352,28 +367,21 @@ body {
   margin: auto;
 }
 
-.btn a {
-  width: 100%;
-  color: white;
-  margin: auto;
-  padding: 14px 14px;
-  border: none;
-  border-radius: 4px;
-  text-decoration: none;
-}
-
 .btn {
-  display: inline-block;
-  padding: 8px 20px;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.btn a {
   background-color: #424242;
+  padding: 8px 20px;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
-  justify-self: end;
-  align-self: center;
+  border: none;
 }
-
-.btn:hover {
+.btn a:hover {
   background-color: #686767;
 }
 

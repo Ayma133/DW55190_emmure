@@ -10,12 +10,28 @@
 
       }
       .content{
-        .tour {
-          margin: auto; 
-        } 
+        margin: auto;
+        p,
         h1,
         li{
         color: #fcf2f2;
+        font-weight: 800;
+        font-size: x-large;
+        text-align: center
         }
+
     }
+
+    .logo{
+      img{
+        margin: auto;
+        padding: 50px;
+    }
+  }
+  .btn {
+  
+    margin: auto;
+  }
+
+
 
