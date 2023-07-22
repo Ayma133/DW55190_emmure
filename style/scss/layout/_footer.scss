@@ -22,8 +22,9 @@
 
 
    .footer{
+
     text-align: center;
-    margin: auto;
+    margin:50px auto;
     max-width: 800px;
     img {
       max-height: 200px;
@@ -37,10 +38,11 @@
       .fa-brands:hover {
         color: #3a3939;
       }
+
+      }
     }
     a:link,
     a:visited{
-      background-color: #000;
       color: #fff;
       padding: 20px;
       text-align: center;
@@ -48,5 +50,19 @@
     .social-card {
       gap: 15px;
     }
-   }
- 
+   
+
+    .footer figure img {
+      opacity: 1;
+      -webkit-transition: .5s ease-in-out;
+      transition: .5s ease-in-out;
+    }
+    .footer figure:hover img {
+      opacity: .3;
+    }
+    .footer-container a:hover{
+      color: #686767 !important;
+      background-color: #000;
+    }
+
+

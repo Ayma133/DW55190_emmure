@@ -1,44 +1,93 @@
+header{
+  background-color:#515151
+}
 
-#nav {
-    padding-bottom: 40px;
-    a:link,
-    a:visited {
-    background-color: #424242;
-    color: #ffffff;
-    padding: 14px 18px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: #fcf2f2;
+  font-size: 1.2rem;
+  font-weight: bold;
+
+}
+
+header{
+  position: relative;
+  padding: 0 2rem;
+}
+.navbar{
+  width: 100%;
+  height: 60px;
+  max-width: 1200px;
+  margin: 0 0 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.navbar .logo img
+{
+height: 40px;
+}
+
+.navbar .links{
+  display: flex;
+  gap: 2rem;
+}
+.navbar .toggle_btn{
+  color: #fcf2f2;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+.dropdown_menu{
+  display: none;
+  position: absolute;
+  right: 2rem;
+  top: 62px;
+  height:0;
+  width: 300px;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur (15px);
+  border-radius: 5px;
+  overflow: hidden;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  z-index: 1;
+}
+.dropdown_menu.open{
+  height: 250px;
+}
+.dropdown_menu li{
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  a{
+    padding: 0;
   }
-  a:hover {
-    background-color: #686767;
-    color: #fcf2f2;
+}
+
+@media (max-width: 768px){
+  .navbar .links{
+    display: none;
   }
-    nav {
-      display: block;
-      color: white;
-      text-align: center;
-      text-decoration: none;
-      float: left;
+  .navbar .toggle_btn{
+    display: block;
+  }
+  .dropdown_menu{
+    display: block;
+  }
+}
 
-      ul {
-        font-weight: bolder;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #424242;
-        position: fixed;
-        z-index: 1;
-        li {
-            float: left;
-            
-          }
-      }  
-    }
-  }  
-
-    img {
-      max-width: 100%;
-      display: block;
-    }
+@media (max-width:576px){
+  .dropdown_menu{
+    left: 2rem;
+    width: unset;
+  }
+}
+header a:hover{
+  background-color: unset;
+  color: #343434;
+}

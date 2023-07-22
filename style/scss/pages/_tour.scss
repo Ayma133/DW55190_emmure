@@ -1,8 +1,4 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
+
   
   .event-list {
     display: grid;
@@ -41,5 +37,8 @@ body {
    .tour{
     img{
         margin: auto;
+        max-width: 768px;
+        max-width: 100%;
+        display: block;
     }
    }

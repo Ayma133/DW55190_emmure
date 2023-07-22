@@ -1,0 +1,61 @@
+input[type=text], select, input[type=date], textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: none;
+    font-size: 1rem;
+    background-color: #d2d1d1;
+    border: none;
+    border-radius: 4px;
+    color: #000;
+    font: inherit;
+    font-weight: 500;
+  }
+  ::placeholder {
+    color: #000;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: #000;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+   color: #000;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: #424242;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font: inherit;
+    font-size: 1rem;
+    font-weight: 800;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #686767;
+  }
+  
+  .contact {
+    border-radius: 5px;
+    padding: 20px;
+    color: #fcf2f2;
+  }
+
+  
+  @media (min-width: 769px)  {
+    .contact {
+      width: 769px;
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+    }
+  }
+  

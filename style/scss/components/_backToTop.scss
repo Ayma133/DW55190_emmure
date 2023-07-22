@@ -1,0 +1,24 @@
+.top {
+    --offset: 50px; 
+    position: sticky;
+    bottom: 20px;      
+    margin-left:10px; 
+    place-self: end;
+    margin-top: calc(100vh + var(--offset));
+    text-decoration: none;
+    padding: 10px;
+    font-family: sans-serif;
+    color: #fff;
+    background: #424242;
+    border-radius: 5px;
+    white-space: nowrap;
+
+  }
+
+  a:hover {
+      background-color: #686767;
+    }
+  
+
+
+  

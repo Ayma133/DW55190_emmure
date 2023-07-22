@@ -3,134 +3,214 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description" content="Emmure's Official Website - The Hell We Create Europe Tour 2023 ">
+    <meta
+      name="description"
+      content="Emmure's Official Website - The Hell We Create Europe Tour 2023 "
+    />
 
-    <meta name="viewport"
+    <meta
+      name="viewport"
       content="width=
     , initial-scale=1.0"
     />
     <title>Emmure | Official Website</title>
     <link rel="shortcut icon" href="./images/logoE.png" type="image/x-icon" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script
       src="https://kit.fontawesome.com/9a4ac5cbc0.js"
       crossorigin="anonymous"
     ></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="./style/css/style.css" />
   </head>
 
   <body id="body">
     <!-- navbar -->
-    <div id="nav">
-      <nav>
-        <ul>
-          <li><a class="nav" href="#">Home</a></li>
-          <li><a class="nav" href="./pages/tour.html">Tour</a></li>
-          <li><a class="nav" href="./pages/music.html">Music</a></li>
-          <li><a class="nav" href="./pages/store.html">Store</a></li>
+    <header>
+      <div class="navbar">
+        <div class="logo"> <a href="#"><img src="./images/Emmure_Logo.png" alt="Emmure is a Cult"></a></div>
+        <ul class="links">
+          <li><a href="#">Home</a></li>
+          <li><a href="./pages/tour.html">Tour</a></li>
+          <li><a href="./pages/music.html">Music</a></li>
+          <li><a href="./pages/store.html">Store</a></li>
+          <li><a href="./pages/contact.html">Contact</a></li>
         </ul>
-      </nav>
-    </div>
+        <div class="toggle_btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+
+      <div class="dropdown_menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="./pages/tour.html">Tour</a></li>
+        <li><a href="./pages/music.html">Music</a></li>
+        <li><a href="./pages/store.html">Store</a></li>
+        <li><a href="./pages/contact.html">Contact</a></li>
+      </div>
+    </header>
 
     <div id="body">
-
-      <div class= logo data-aos="fade-down" data-aos-anchor-placement="top-center"  data-aos-duration="3000">
-        <img src="./images/Emmure_Logo.png" alt="Emmure logo">
-
+      
+      <div class="callout">
+        <div class="callout-header">
+          <h1> JOIN THE MAILING LIST</h1>
+          <h2>SIGN UP AND GET 15% OFF</h2>
+        <h3>Sign up for an instant discount, plus early access, new merchandise, music and more.</h3> </div>
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        <div class="callout-container">
+          <form action="/action_page.php">
+            <label for="lname">Email Address *</label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Your email address.."
+              required
+            />
+            <label for="zip">Zip Code *</label>
+            <input
+              type="text"
+              id="zip"
+              pattern="[0-9]+"
+              name="zip"
+              placeholder="20300"
+              required
+            />
+            <input type="submit" value="Subscribe now" />
+          </form>
+          <p>By providing this information, you are opting to receive emails from Emmure </p>
+          <p>Fields marked with an asterisk (*) are required. </p>
+        </div>
       </div>
-
-
       <!-- THE HELL WE CREATE EUROPE/UK TOUR 2023 -->
       <div class="index">
-      <div class="content">
-        <div>
-          <img src="./images/tourPosterDesktop.jpg" alt="tour" />
-          <p class="tourContent">THE HELL WE CREATE EUROPE/UK TOUR 2023</p>
+        <div class="content ">
+          
+          <div>
+            <img src="./images/tourPosterDesktop.jpg" alt="The hell we create tour poster" />
+            <div class="child">
+            <p>THE HELL WE CREATE EUROPE/UK TOUR 2023</p>
+            <div class="btn">
+              <a
+                href="https://www.ticketmaster.com/emmure-tickets/artist/910538"
+                target="_blank">
+                Tickets
+              </a>
+            </div>
+          </div>
+        </div>
+        </div>
+        <!-- STORE -->
+        <div class="content">
+          <video loop autoplay src="./videos/merchVideo.mp4"></video>
+          <div class="child">
+          <p>US Store</p>
           <div class="btn">
-          <a
-            href="https://www.ticketmaster.com/emmure-tickets/artist/910538"
-            target="_blank">
-            Tickets
-          </a>
+            <a href="https://www.impericon.com/us/emmure.html" target="_blank">
+              Shop Now
+            </a>
           </div>
         </div>
       </div>
-      <!-- STORE -->
-      <div class="content">
-        <video loop autoplay src="./videos/merchVideo.mp4"></video>
-        <p>US Store</p>
-        <div class="btn">
-        <a href="https://www.impericon.com/us/emmure.html" target="_blank">
-          Shop Now
-        </a>
+        <div class="content">
+          <video
+            loop
+            autoplay
+            src="./videos/thundermouth.mp4"
+            type="video/mp4"
+          ></video>
+        <div class="child">
+          <p>Thundermouth - Official Video</p>
+          <div class="btn">
+            <a
+              href="https://www.youtube.com/watch?v=jgCkQI8Y_vI"
+              target="_blank"
+            >
+              Watch Now
+            </a>
+          </div>
+        </div>
         </div>
       </div>
+    </div>
 
-
-      <div  class="content">
-        <video loop autoplay src="./videos/thundermouth.mp4" type="video/mp4"></video>
-        <p>Thundermouth - Official Video</p>
-        <div class="btn">
-          <a href="https://www.youtube.com/watch?v=jgCkQI8Y_vI" target="_blank">
-            Watch Now
-          </a>
-        </div>
-
-      </div>
-  </div>
-</div>
-
-      <!-- Footer-->
-      <section class="footer-container">
-
-        <div class="footer">
+    <!-- Footer-->
+    <section class="footer-container">
+      <div class="footer">
+        <a href="https://www.emmurecult.com/" target="_blank" >
+          <figure>
           <img src="./images/logoE.png" alt="Emmure" />
-          <div class="social-grid">
-            <div class="social-card">
-          <a href="https://open.spotify.com/artist/1C62FV9Cltn9L4c9jAwCyk"
-            target="_blank"
-            ><i class="fa-brands fa-spotify fa-4x"></i>
-          </a>
-        </div>
-        <div class="social-card">
-          <a href="https://www.youtube.com/channel/UCgzr0lvIbjL1hlKsGtwfVDA"
-            target="_blank"
-          >
-            <i class="fa-brands fa-youtube fa-4x"></i>
-          </a>
+        </figure>
+        </a>
+        <div class="social-grid">
+          <div class="social-card">
+            <a
+              href="https://open.spotify.com/artist/1C62FV9Cltn9L4c9jAwCyk"
+              target="_blank"
+              ><i class="fa-brands fa-spotify fa-4x"></i>
+            </a>
           </div>
           <div class="social-card">
-          <a href="https://music.apple.com/us/artist/emmure/215655584"
-            target="_blank">
-            <i class="fa-brands fa-apple fa-4x"></i>
-          </a>
-        </div>
-        <div class="social-card">
-          <a href="https://www.instagram.com/emmurecult/?hl=en" target="_blank">
-            <i class="fa-brands fa-instagram fa-4x"></i>
-          </a>
-        </div>
-        <div class="social-card">
-          <a href="https://twitter.com/EMMUREmusic?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
-            target="_blank">
-            <i class="fa-brands fa-twitter fa-4x"></i>
-          </a>
-        </div>
+            <a
+              href="https://www.youtube.com/channel/UCgzr0lvIbjL1hlKsGtwfVDA"
+              target="_blank"
+            >
+              <i class="fa-brands fa-youtube fa-4x"></i>
+            </a>
+          </div>
           <div class="social-card">
-          <a href="https://www.facebook.com/emmure/" target="_blank">
-            <i class="fa-brands fa-facebook fa-4x"></i>
-          </a>
+            <a
+              href="https://music.apple.com/us/artist/emmure/215655584"
+              target="_blank"
+            >
+              <i class="fa-brands fa-apple fa-4x"></i>
+            </a>
+          </div>
+          <div class="social-card">
+            <a
+              href="https://www.instagram.com/emmurecult/?hl=en"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram fa-4x"></i>
+            </a>
+          </div>
+          <div class="social-card">
+            <a
+              href="https://twitter.com/EMMUREmusic?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+              target="_blank"
+            >
+              <i class="fa-brands fa-twitter fa-4x"></i>
+            </a>
+          </div>
+          <div class="social-card">
+            <a href="https://www.facebook.com/emmure/" target="_blank">
+              <i class="fa-brands fa-facebook fa-4x"></i>
+            </a>
+          </div>
         </div>
-        </div>
-
-
+        <a href="https://sharptonerecords.co/"  target="_blank">
+          <figure>
+          <img src="./images/SHARPTONE.png" alt="Sharptone Records" />
+        </figure>
+        </a>
       </div>
-      </section>
-      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-      <script>
-        AOS.init()
-      </script>
+    </section>
+    <a href="#" class="top">Back to Top &#8593;</a>
+     <script>
+      const toggleBtn = document.querySelector('.toggle_btn')
+      const toggleBtnIcon = document.querySelector('.toggle_btn i')
+      const dropDownMenu = document.querySelector('.dropdown_menu')
+
+      toggleBtn.onclick = function(){
+        dropDownMenu.classList.toggle('open')
+        const isOpen = dropDownMenu.classList.contains('open')
+
+        toggleBtnIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+      }
+    </script>
   </body>
 </html>

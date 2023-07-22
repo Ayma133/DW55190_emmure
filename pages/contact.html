@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Emmure's Official Website - Conctact us "
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emmure | Contact us</title>
+    <link rel="shortcut icon" href="../images/logoE.png" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/9a4ac5cbc0.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="../style/css/style.css" />
+  </head>
+
+  <body id="body">
+    <!-- navbar -->
+
+    <header>
+      <div class="navbar">
+        <div class="logo"> <a href="../index.html"><img src="../images/Emmure_Logo.png" alt="Emmure is a Cult"></a></div>
+        <ul class="links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="tour.html">Tour</a></li>
+          <li><a href="music.html">Music</a></li>
+          <li><a href="store.html">Store</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="toggle_btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+
+      <div class="dropdown_menu">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="tour.html">Tour</a></li>
+        <li><a href="music.html">Music</a></li>
+        <li><a href="store.html">Store</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </div>
+    </header>
+
+    <div class="content">
+      <div class="contact">
+        <h1>Request Booking Information</h1>
+        <form action="/action_page.php">
+          <label for="fname">First Name *</label>
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="Your name.."
+            required
+          />
+
+          <label for="lname">Last Name *</label>
+          <input
+            type="text"
+            id="lname"
+            name="lastname"
+            placeholder="Your last name.."
+            required
+          />
+
+          <label for="lname">Organization</label>
+          <input
+            type="text"
+            id="org"
+            name="organization"
+            placeholder="Your organization.."
+          />
+
+          <label for="lname">Title</label>
+          <input
+            type="text"
+            id="title"
+            name="title"
+            placeholder="Your title.."
+          />
+
+          <label for="lname">Phone Number *</label>
+          <input
+            type="text"
+            id="phone"
+            name="phone"
+            placeholder="Your phone number.."
+            required
+          />
+
+          <label for="lname">Email Address *</label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Your email address.."
+            required
+          />
+
+          <label for="eventdate">Event Date</label>
+          <input type="date" id="event-date" name="event-date" />
+
+          <label for="eventlocation">Event Location</label>
+          <textarea
+            id="event-location"
+            name="event-location"
+            rows="5"
+            placeholder="742 Evergreen Terrace"
+          ></textarea>
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+    <section class="footer-container">
+      <div class="footer">
+        <a href="https://www.emmurecult.com/"target="_blank">
+            <figure>
+          <img src="../images/logoE.png" alt="Emmure" />
+        </figure>
+        </a>
+        <div class="social-grid">
+          <div class="social-card">
+            <a
+              href="https://open.spotify.com/artist/1C62FV9Cltn9L4c9jAwCyk"
+              target="_blank"
+              ><i class="fa-brands fa-spotify fa-4x"></i>
+            </a>
+          </div>
+          <div class="social-card">
+            <a
+              href="https://www.youtube.com/channel/UCgzr0lvIbjL1hlKsGtwfVDA"
+              target="_blank"
+            >
+              <i class="fa-brands fa-youtube fa-4x"></i>
+            </a>
+          </div>
+          <div class="social-card">
+            <a
+              href="https://music.apple.com/us/artist/emmure/215655584"
+              target="_blank"
+            >
+              <i class="fa-brands fa-apple fa-4x"></i>
+            </a>
+          </div>
+          <div class="social-card">
+            <a
+              href="https://www.instagram.com/emmurecult/?hl=en"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram fa-4x"></i>
+            </a>
+          </div>
+          <div class="social-card">
+            <a
+              href="https://twitter.com/EMMUREmusic?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+              target="_blank"
+            >
+              <i class="fa-brands fa-twitter fa-4x"></i>
+            </a>
+          </div>
+          <div class="social-card">
+            <a href="https://www.facebook.com/emmure/" target="_blank">
+              <i class="fa-brands fa-facebook fa-4x"></i>
+            </a>
+          </div>
+        </div>
+        <a href="https://sharptonerecords.co/"target="_blank">
+            <figure>
+          <img src="../images/SHARPTONE.png" alt="Sharptone Records" />
+        </figure>
+        </a>
+      </div>
+    </section>
+    <a href="#" class="top">Back to Top &#8593;</a>
+    <script>
+      const toggleBtn = document.querySelector('.toggle_btn')
+      const toggleBtnIcon = document.querySelector('.toggle_btn i')
+      const dropDownMenu = document.querySelector('.dropdown_menu')
+
+      toggleBtn.onclick = function(){
+        dropDownMenu.classList.toggle('open')
+        const isOpen = dropDownMenu.classList.contains('open')
+
+        toggleBtnIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+      }
+    </script>
+  </body>
+</html>

@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Emmure's Official Website - Merchandise ">
+    <meta
+      name="description"
+      content="Emmure's Official Website - Merchandise "
+    />
     <title>Emmure | Merchandise</title>
     <link rel="shortcut icon" href="../images/logoE.png" type="image/x-icon" />
 
@@ -23,16 +26,31 @@
   </head>
 
   <body id="body">
-    <div id="nav">
-      <nav>
-        <ul>
-          <li><a class="nav" href="../index.html">Home</a></li>
-          <li><a class="nav" href="tour.html">Tour</a></li>
-          <li><a class="nav" href="music.html">Music</a></li>
-          <li><a class="nav" href="store.html">Store</a></li>
+
+    <header>
+      <div class="navbar">
+        <div class="logo"> <a href="../index.html"><img src="../images/Emmure_Logo.png" alt="Emmure is a Cult"></a></div>
+        <ul class="links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="tour.html">Tour</a></li>
+          <li><a href="music.html">Music</a></li>
+          <li><a href="store.html">Store</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
-      </nav>
-    </div>
+        <div class="toggle_btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+
+      <div class="dropdown_menu">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="tour.html">Tour</a></li>
+        <li><a href="music.html">Music</a></li>
+        <li><a href="store.html">Store</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </div>
+    </header>
+
 
     <div class="container">
       <div class="product-grid">
@@ -262,48 +280,79 @@
     <!-- Footer-->
 
     <section class="footer-container">
-
       <div class="footer">
-        <img src="../images/logoE.png" alt="Emmure" />
+        <a href="https://www.emmurecult.com/"target="_blank">
+          <figure>
+          <img src="../images/logoE.png" alt="Emmure" />
+        </figure>
+        </a>
         <div class="social-grid">
           <div class="social-card">
-        <a href="https://open.spotify.com/artist/1C62FV9Cltn9L4c9jAwCyk"
-          target="_blank"
-          ><i class="fa-brands fa-spotify fa-4x"></i>
-        </a>
-      </div>
-      <div class="social-card">
-        <a href="https://www.youtube.com/channel/UCgzr0lvIbjL1hlKsGtwfVDA"
-          target="_blank"
-        >
-          <i class="fa-brands fa-youtube fa-4x"></i>
-        </a>
+            <a
+              href="https://open.spotify.com/artist/1C62FV9Cltn9L4c9jAwCyk"
+              target="_blank"
+              ><i class="fa-brands fa-spotify fa-4x"></i>
+            </a>
+          </div>
+          <div class="social-card">
+            <a
+              href="https://www.youtube.com/channel/UCgzr0lvIbjL1hlKsGtwfVDA"
+              target="_blank"
+            >
+              <i class="fa-brands fa-youtube fa-4x"></i>
+            </a>
+          </div>
+          <div class="social-card">
+            <a
+              href="https://music.apple.com/us/artist/emmure/215655584"
+              target="_blank"
+            >
+              <i class="fa-brands fa-apple fa-4x"></i>
+            </a>
+          </div>
+          <div class="social-card">
+            <a
+              href="https://www.instagram.com/emmurecult/?hl=en"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram fa-4x"></i>
+            </a>
+          </div>
+          <div class="social-card">
+            <a
+              href="https://twitter.com/EMMUREmusic?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+              target="_blank"
+            >
+              <i class="fa-brands fa-twitter fa-4x"></i>
+            </a>
+          </div>
+          <div class="social-card">
+            <a href="https://www.facebook.com/emmure/" target="_blank">
+              <i class="fa-brands fa-facebook fa-4x"></i>
+            </a>
+          </div>
         </div>
-        <div class="social-card">
-        <a href="https://music.apple.com/us/artist/emmure/215655584"
-          target="_blank">
-          <i class="fa-brands fa-apple fa-4x"></i>
+        <a href="https://sharptonerecords.co/"target="_blank">
+          <figure>
+          <img src="../images/SHARPTONE.png" alt="Sharptone Records" />
+        </figure>
         </a>
       </div>
-      <div class="social-card">
-        <a href="https://www.instagram.com/emmurecult/?hl=en" target="_blank">
-          <i class="fa-brands fa-instagram fa-4x"></i>
-        </a>
-      </div>
-      <div class="social-card">
-        <a href="https://twitter.com/EMMUREmusic?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
-          target="_blank">
-          <i class="fa-brands fa-twitter fa-4x"></i>
-        </a>
-      </div>
-        <div class="social-card">
-        <a href="https://www.facebook.com/emmure/" target="_blank">
-          <i class="fa-brands fa-facebook fa-4x"></i>
-        </a>
-      </div>
-      </div>
-
-    </div>
     </section>
+    <a href="#" class="top">Back to Top &#8593;</a>
+    <script>
+      const toggleBtn = document.querySelector('.toggle_btn')
+      const toggleBtnIcon = document.querySelector('.toggle_btn i')
+      const dropDownMenu = document.querySelector('.dropdown_menu')
+
+      toggleBtn.onclick = function(){
+        dropDownMenu.classList.toggle('open')
+        const isOpen = dropDownMenu.classList.contains('open')
+
+        toggleBtnIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+      }
+    </script>
   </body>
 </html>
